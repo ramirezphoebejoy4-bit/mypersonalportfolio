@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Phoebe Joy L. Ramirez</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <div class="logo"Contact Information</div>
+        <button class="menu-btn" id="menuBtn">&#9776;</button>
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <!-- CONTACT CONTENT -->
+    <section class="page">
+        <h1>Contact Me</h1>
+        <p>
+            If you have any questions, suggestions, or you just want to collaborate, 
+            feel free to reach out using the form below. I would be happy to hear from you.
+        </p>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <div>
+                    <h3>Email</h3>
+                    <p>ramirezphoebejoy4@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div>
+                    <h3>Phone</h3>
+                    <p>+63 997 603 0556</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div>
+                    <h3>Location</h3>
+                    <p>Purok-6, Brgy. Kalumboyan, Bayawan City, Negros Oriental</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOCIAL LINKS -->
+        <div class="social-links">
+            <h3>Social Media</h3>
+            <div class="social-buttons">
+                <a href="https://facebook.com" target="_blank" class="social-btn">Facebook</a>
+                <a href="https://github.com" target="_blank" class="social-btn">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="social-btn">LinkedIn</a>
+            </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <form id="contactForm" novalidate>
+            <h3>Send a Message</h3>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your full name">
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your@email.com">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+                <span class="error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+            <p id="successMsg" class="success"></p>
+        </form>
+    </section>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="topBtn" title="Back to top">&#8593;</button>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Phoebe Joy L. Ramirez. Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
