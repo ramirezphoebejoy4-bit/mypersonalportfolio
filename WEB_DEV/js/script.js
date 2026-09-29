@@ -105,34 +105,34 @@ if (contactForm) {
 
         // Validate name
         if (name === '') {
-            nameError.textContent = 'Palihog isulat imong pangalan.';
+            nameError.textContent = 'Please type your name.';
             isValid = false;
         } else if (name.length < 2) {
-            nameError.textContent = 'Kinahanglan at least 2 characters ang pangalan.';
+            nameError.textContent = 'Give atleast 2 characters name.';
             isValid = false;
         }
 
         // Validate email
         if (email === '') {
-            emailError.textContent = 'Palihog isulat imong email.';
+            emailError.textContent = 'type your email.';
             isValid = false;
         } else if (!email.includes('@') || !email.includes('.')) {
-            emailError.textContent = 'Dili valid nga email address.';
+            emailError.textContent = 'Invalid email address.';
             isValid = false;
         }
 
         // Validate message
         if (message === '') {
-            messageError.textContent = 'Palihog isulat imong mensahe.';
+            messageError.textContent = 'Type your message.';
             isValid = false;
         } else if (message.length < 5) {
-            messageError.textContent = 'Kinahanglan at least 5 characters ang mensahe.';
+            messageError.textContent = 'atleast 5 charactersof message.';
             isValid = false;
         }
 
         // Show success
         if (isValid) {
-            successMsg.textContent = 'Salamat! Na-send na imong mensahe.';
+            successMsg.textContent = 'Thank you. We received your message.';
             contactForm.reset();
 
             setTimeout(function() {
